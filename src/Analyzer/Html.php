@@ -19,7 +19,7 @@ class Html extends BaseAnalyzer
         $data = [];
 
         // Get the page title
-        if (preg_match_all('/<title>(.*)?<\/title>/i', $content, $matches)) {
+        if (preg_match_all('/<title>(.*?)<\/title>/i', $content, $matches)) {
             $data['title'] = reset($matches[1]);
         }
 
