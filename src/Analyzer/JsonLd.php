@@ -16,7 +16,7 @@ class JsonLd extends BaseAnalyzer
      */
     public function analyze(string $content) : array
     {
-        if (!preg_match_all('/<script[^>]*?type=["\']application\/ld\+json["\']>(.*?)<\/script>/i', $content, $matches)) {
+        if (!preg_match_all('/<script[^>]*?type=["\']application\/ld\+json["\'].*?>(.*?)<\/script>/i', $content, $matches)) {
             return array();
         }
 

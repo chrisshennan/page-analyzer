@@ -29,5 +29,13 @@
         "psr-4": {
             "Cas\\PageAnalyzer\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9.5.x-dev"
     }
 }
